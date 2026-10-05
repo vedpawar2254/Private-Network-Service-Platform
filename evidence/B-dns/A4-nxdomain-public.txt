@@ -1,0 +1,21 @@
+
+; <<>> DiG 9.10.6 <<>> @8.8.8.8 app.LANdo.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 4670
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;app.LANdo.test.			IN	A
+
+;; AUTHORITY SECTION:
+.			86301	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2026100500 1800 900 604800 86400
+
+;; Query time: 13 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Oct 05 14:19:05 IST 2026
+;; MSG SIZE  rcvd: 118
+

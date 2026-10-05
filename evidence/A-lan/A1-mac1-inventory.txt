@@ -1,0 +1,8 @@
+=== Mac1 IP inventory ===
+IP:      10.7.5.248
+Mask:    255.255.224.0  (/19)
+Gateway: 10.7.0.1
+Iface:   en0
+MAC:     7a:ed:a5:e2:d8:4c
+
+Roles:  Mac1(DNS)=10.7.5.248  Mac2(edge)=10.7.21.122  Mac3(A)=10.7.6.183  Mac4(B)=10.7.7.247

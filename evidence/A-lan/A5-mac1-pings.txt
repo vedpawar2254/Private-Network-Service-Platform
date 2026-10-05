@@ -1,0 +1,15 @@
+=== Mac1 -> 10.7.21.122 ===
+--- 10.7.21.122 ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 9.893/14.759/23.094/5.405 ms
+
+=== Mac1 -> 10.7.6.183 ===
+--- 10.7.6.183 ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 6.748/7.179/7.547/0.367 ms
+
+=== Mac1 -> 10.7.7.247 ===
+--- 10.7.7.247 ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 6.041/15.519/41.400/14.955 ms
+

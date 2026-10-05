@@ -1,0 +1,21 @@
+=== X-Backend header per request ===
+--- request 1 ---
+x-backend: B
+--- request 2 ---
+x-backend: A
+--- request 3 ---
+x-backend: B
+--- request 4 ---
+x-backend: A
+--- request 5 ---
+x-backend: B
+--- request 6 ---
+x-backend: A
+
+=== bodies (exact evaluator command) ===
+{"backend":"B","status":"ok","time":"2026-10-05T08:49:17.426Z"}
+{"backend":"A","status":"ok","time":"2026-10-05T08:49:17.439Z"}
+{"backend":"B","status":"ok","time":"2026-10-05T08:49:17.574Z"}
+{"backend":"A","status":"ok","time":"2026-10-05T08:49:17.574Z"}
+{"backend":"B","status":"ok","time":"2026-10-05T08:49:17.916Z"}
+{"backend":"A","status":"ok","time":"2026-10-05T08:49:17.962Z"}

@@ -1,0 +1,60 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host app.LANdo.test:443 was resolved.
+* IPv6: (none)
+* IPv4: 10.7.21.122
+*   Trying 10.7.21.122:443...
+* Connected to app.LANdo.test (10.7.21.122) port 443
+* ALPN: curl offers h2,http/1.1
+* (304) (OUT), TLS handshake, Client hello (1):
+} [319 bytes data]
+*  CAfile: /etc/ssl/cert.pem
+*  CApath: none
+* (304) (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* (304) (IN), TLS handshake, Unknown (8):
+{ [47 bytes data]
+* (304) (IN), TLS handshake, Certificate (11):
+{ [888 bytes data]
+* (304) (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* (304) (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* (304) (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256 / [blank] / UNDEF
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=app.lando.test
+*  start date: Oct  2 14:30:59 2026 GMT
+*  expire date: Nov  3 14:30:59 2027 GMT
+*  subjectAltName: host "app.LANdo.test" matched cert's "app.lando.test"
+*  issuer: CN=lando Local Root CA
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://app.LANdo.test/
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: app.LANdo.test]
+* [HTTP/2] [1] [:path: /]
+* [HTTP/2] [1] [user-agent: curl/8.7.1]
+* [HTTP/2] [1] [accept: */*]
+> GET / HTTP/2
+> Host: app.LANdo.test
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/2 200 
+< server: nginx/1.31.6
+< date: Mon, 05 Oct 2026 08:49:15 GMT
+< content-type: application/json; charset=utf-8
+< content-length: 98
+< x-powered-by: Express
+< x-backend: A
+< etag: W/"62-tyTA58SyXdHncrBIgetY1QhgxSM"
+< 
+{ [98 bytes data]
+100    98  100    98    0     0    267      0 --:--:-- --:--:-- --:--:--   268
+* Connection #0 to host app.LANdo.test left intact
+{"service":"team backend","backend":"A","host":"Adityarajs-MacBook-Pro.local","message":"running"}
