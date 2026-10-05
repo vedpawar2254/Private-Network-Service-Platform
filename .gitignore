@@ -1,5 +1,14 @@
+# Private keys — NEVER commit (only the public rootCA.pem is shared)
 *.key
+rootCA.key
+server.key
+
+# OpenSSL working files
 *.csr
 *.srl
+
+# Node
 node_modules/
+
+# macOS
 .DS_Store
