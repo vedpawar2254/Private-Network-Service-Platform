@@ -1,0 +1,14 @@
+{
+  "name": "cn-project-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend A for the private network service project",
+  "main": "server.js",
+  "scripts": {
+    "start": "BACKEND=A PORT=3001 node server.js",
+    "start:backend-b": "BACKEND=B PORT=3002 node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

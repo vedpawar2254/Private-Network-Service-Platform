@@ -1,0 +1,20 @@
+# macOS PF (Packet Filter) Rule Template for Backend A (Laptop 3)
+# Port: 3001
+# Purpose: Service Isolation (Extension C)
+# Only allow incoming TCP traffic from Edge Reverse Proxy (Mac 2) and localhost.
+# Reject all direct connections from other network clients.
+
+table <edge_server> { __EDGE_IP__ }
+
+# Allow loopback (localhost) traffic
+pass in quick proto tcp from 127.0.0.1 to any port 3001 flags S/SA keep state
+pass in quick proto tcp from ::1 to any port 3001 flags S/SA keep state
+
+# Allow incoming TCP from Edge Reverse Proxy (Mac 2)
+pass in quick proto tcp from <edge_server> to any port 3001 flags S/SA keep state
+
+# Block and reject all other incoming direct connections to port 3001
+# 'return' sends an immediate TCP RST (Connection refused)
+# Use 'drop' if you prefer silent packet drops (Connection timed out)
+block return in quick proto tcp to any port 3001
+
