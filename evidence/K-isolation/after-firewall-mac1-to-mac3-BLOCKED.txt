@@ -1,0 +1,6 @@
+# 2026-11-23 ~11:39 captured on Mac 1 (10.7.30.221, client) — Mac 3 pf rule ON (only 10.7.26.218 allowed on :3001)
+# curl -i --connect-timeout 5 http://10.7.21.122:3001/api/status
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+curl: (28) Failed to connect to 10.7.21.122 port 3001 after 5006 ms: Timeout was reached
