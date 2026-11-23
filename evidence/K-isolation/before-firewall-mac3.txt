@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: A
+Cache-Control: no-store
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+ETag: W/"3f-qIRSt9yQnwha8l5ES/dJPybo4pE"
+Date: Mon, 23 Nov 2026 05:30:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"backend":"A","status":"ok","time":"2026-11-23T05:30:44.175Z"}
