@@ -1,0 +1,11 @@
+## primary Mac 1 (stopped):
+
+; <<>> DiG 9.10.6 <<>> @10.7.30.221 app.lando.test +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; connection timed out; no servers could be reached
+## client resolver (falls back to Mac 4):
+10.7.26.218
+## app still works:
+HTTP/2 200 
+x-backend: B
