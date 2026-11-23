@@ -1,0 +1,8 @@
+10.7.26.218 [23/Nov/2026:11:01:47 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.21.122:3001 (200) 0.093s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:01:47 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.15.167:3002 (200) 0.012s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:15:00 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.21.122:3001, 10.7.15.167:3002 (502, 200) 1.106s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:15:00 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.15.167:3002 (200) 0.037s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:15:00 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.15.167:3002 (200) 0.018s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:15:00 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.15.167:3002 (200) 0.014s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:15:00 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.15.167:3002 (200) 0.011s TLSv1.3 host=app.lando.test
+10.7.26.218 [23/Nov/2026:11:15:00 +0530] "HEAD /api/status HTTP/2.0" 200 backend=10.7.15.167:3002 (200) 0.084s TLSv1.3 host=app.lando.test

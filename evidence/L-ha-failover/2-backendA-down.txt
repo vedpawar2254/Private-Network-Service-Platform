@@ -1,0 +1,7 @@
+# 2026-11-23 11:14:59 Backend A (Mac 3, 10.7.21.122:3001) STOPPED — 6 requests via https://app.lando.test
+HTTP/2 200  x-backend: B x-upstream: 10.7.21.122:3001, 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
