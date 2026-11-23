@@ -1,0 +1,12 @@
+# 2026-11-23 12:18:47 captured on Mac 2
+### F1: wrong DNS server (public 8.8.8.8 does not know lando.test) -> NXDOMAIN, but IP connectivity to edge is fine
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 19636
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+round-trip min/avg/max/stddev = 0.134/0.154/0.175/0.021 ms
+
+### F5: wrong destination port (8443) -> host reachable, TCP refused
+curl: (7) Failed to connect to app.lando.test port 8443 after 10 ms: Couldn't connect to server
+nc: connectx to 10.7.26.218 port 8443 (tcp) failed: Connection refused
+
+### control: correct port 443
+HTTP/2 200 

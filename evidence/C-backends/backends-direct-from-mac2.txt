@@ -1,0 +1,54 @@
+### GET http://10.7.21.122:3001/  (Backend A, direct from Mac 2)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: A
+Content-Type: application/json; charset=utf-8
+Content-Length: 98
+ETag: W/"62-tyTA58SyXdHncrBIgetY1QhgxSM"
+Date: Mon, 23 Nov 2026 06:48:26 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"service":"team backend","backend":"A","host":"Adityarajs-MacBook-Pro.local","message":"running"}
+
+### GET http://10.7.21.122:3001/api/status  (Backend A, direct from Mac 2)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: A
+Cache-Control: no-store
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+ETag: W/"3f-Gksb5r3ihC38K7gLuZdaXp0x0Fg"
+Date: Mon, 23 Nov 2026 06:48:26 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"backend":"A","status":"ok","time":"2026-11-23T06:48:26.255Z"}
+
+### GET http://10.7.15.167:3002/  (Backend B, direct from Mac 2)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: B
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-7XdHACJwfXJkdZr30laOKVRuFOo"
+Date: Mon, 23 Nov 2026 06:48:26 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"service":"team backend","backend":"B","host":"Avirals-MacBook-Pro.local","message":"running"}
+
+### GET http://10.7.15.167:3002/api/status  (Backend B, direct from Mac 2)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: B
+Cache-Control: no-store
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+ETag: W/"3f-LRgxE2MV9ccYQIn3TUhGZnM1ce4"
+Date: Mon, 23 Nov 2026 06:48:26 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"backend":"B","status":"ok","time":"2026-11-23T06:48:26.773Z"}
+
