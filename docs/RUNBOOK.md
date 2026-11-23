@@ -5,10 +5,10 @@
 | Placeholder | Meaning | Value |
 |-------------|---------|-------|
 | domain | team zone | `lando.test` |
-| DNS_IP | Mac 1 | `10.7.5.248` |
-| EDGE_IP | Mac 2 | `10.7.21.122` |
-| A_IP | Mac 3 (Backend A) | `10.7.6.183` |
-| B_IP | Mac 4 (Backend B) | `10.7.7.247` |
+| DNS_IP | Mac 1 | `10.7.30.221` |
+| EDGE_IP | Mac 2 | `10.7.26.218` |
+| A_IP | Mac 3 (Backend A) | `10.7.21.122` |
+| B_IP | Mac 4 (Backend B) | `10.7.15.167` |
 
 ## Every session: restart + IP check
 
