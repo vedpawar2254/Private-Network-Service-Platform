@@ -1,0 +1,38 @@
+=== Task A: Ping Reachability Test from Mac 4 (10.7.7.247) ===
+Date: Fri Oct  2 20:02:01 IST 2026
+
+--- Ping Mac 1 (10.7.5.248 - DNS) ---
+PING 10.7.5.248 (10.7.5.248): 56 data bytes
+64 bytes from 10.7.5.248: icmp_seq=0 ttl=64 time=7.142 ms
+64 bytes from 10.7.5.248: icmp_seq=1 ttl=64 time=10.784 ms
+64 bytes from 10.7.5.248: icmp_seq=2 ttl=64 time=71.809 ms
+
+--- 10.7.5.248 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 7.142/29.912/71.809/29.663 ms
+
+--- Ping Mac 2 (10.7.21.122 - Edge) ---
+PING 10.7.21.122 (10.7.21.122): 56 data bytes
+64 bytes from 10.7.21.122: icmp_seq=0 ttl=64 time=7.927 ms
+64 bytes from 10.7.21.122: icmp_seq=1 ttl=64 time=118.689 ms
+64 bytes from 10.7.21.122: icmp_seq=2 ttl=64 time=94.730 ms
+
+--- 10.7.21.122 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 7.927/73.782/118.689/47.583 ms
+
+--- Ping Mac 3 (10.7.6.183 - Backend A) ---
+PING 10.7.6.183 (10.7.6.183): 56 data bytes
+64 bytes from 10.7.6.183: icmp_seq=0 ttl=64 time=12.125 ms
+64 bytes from 10.7.6.183: icmp_seq=1 ttl=64 time=5.916 ms
+64 bytes from 10.7.6.183: icmp_seq=2 ttl=64 time=73.640 ms
+
+--- 10.7.6.183 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 5.916/30.560/73.640/30.567 ms
+
+--- ARP Cache Table ---
+? (10.7.5.248) at 7a:ed:a5:e2:d8:4c on en0 ifscope [ethernet]
+? (10.7.21.122) at 52:1:cf:b4:e1:ba on en0 ifscope [ethernet]
+? (10.7.6.183) at 46:8b:9c:ce:33:ac on en0 ifscope [ethernet]
+Local ether: ether 6a:5f:a6:ec:a9:39

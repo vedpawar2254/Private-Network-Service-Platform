@@ -1,0 +1,73 @@
+=== Task B: DNS Query Verification on Mac 1 (10.7.5.248) ===
+Date: Fri Oct  2 20:13:40 IST 2026
+
+--- Query app.lando.test ---
+
+; <<>> DiG 9.10.6 <<>> @10.7.5.248 app.lando.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23043
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.lando.test.			IN	A
+
+;; ANSWER SECTION:
+app.lando.test.		60	IN	A	10.7.21.122
+
+;; Query time: 184 msec
+;; SERVER: 10.7.5.248#53(10.7.5.248)
+;; WHEN: Fri Oct 02 20:13:41 IST 2026
+;; MSG SIZE  rcvd: 59
+
+--- Query api.lando.test ---
+
+; <<>> DiG 9.10.6 <<>> @10.7.5.248 api.lando.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23422
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;api.lando.test.			IN	A
+
+;; ANSWER SECTION:
+api.lando.test.		60	IN	A	10.7.21.122
+
+;; Query time: 26 msec
+;; SERVER: 10.7.5.248#53(10.7.5.248)
+;; WHEN: Fri Oct 02 20:13:41 IST 2026
+;; MSG SIZE  rcvd: 59
+
+--- Upstream Query google.com ---
+
+; <<>> DiG 9.10.6 <<>> @10.7.5.248 google.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17978
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; ANSWER SECTION:
+google.com.		13	IN	A	192.178.158.102
+google.com.		13	IN	A	192.178.158.100
+google.com.		13	IN	A	192.178.158.101
+google.com.		13	IN	A	192.178.158.139
+google.com.		13	IN	A	192.178.158.113
+google.com.		13	IN	A	192.178.158.138
+
+;; Query time: 7 msec
+;; SERVER: 10.7.5.248#53(10.7.5.248)
+;; WHEN: Fri Oct 02 20:13:41 IST 2026
+;; MSG SIZE  rcvd: 135
