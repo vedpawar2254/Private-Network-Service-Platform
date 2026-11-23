@@ -82,7 +82,7 @@ Method and fault table: [`docs/PHASE2-MAC2-GUIDE.md`](../docs/PHASE2-MAC2-GUIDE.
 | [`D-loadbalancer/`](D-loadbalancer/) | Round-robin A/B |
 | [`E-tls/`](E-tls/) | `curl -v` TLS handshake + cert validation |
 | [`F-caching/`](F-caching/) | `Cache-Control`, `304 Not Modified` |
-| [`G-wireshark/`](G-wireshark/) | Packet capture + screenshots |
+| [`G-wireshark/`](G-wireshark/) | Packet capture + screenshots (⚠️ to be re-captured: current pcap has no app.lando.test flow) |
 | [`H-failures/`](H-failures/) | Wrong DNS server (NXDOMAIN, IP still reachable), wrong port (TCP refused) |
 
 Configs: [`dns/dnsmasq.conf`](../dns/dnsmasq.conf) · [`nginx/lando.conf`](../nginx/lando.conf) (Phase 1) · [`nginx/lando-phase2.conf`](../nginx/lando-phase2.conf) · [`nginx/lando-standby.conf`](../nginx/lando-standby.conf) · [`backend/server.js`](../backend/server.js)
