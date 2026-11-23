@@ -1,0 +1,2 @@
+aviralmishra@Avirals-MacBook-Pro backend % dig @127.0.0.1 app.lando.test +short
+10.7.26.218
