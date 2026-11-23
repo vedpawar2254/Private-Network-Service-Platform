@@ -1,0 +1,7 @@
+# 2026-11-23 11:36:44 Full path via edge https://app.lando.test while Mac 3 firewall is ON
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: A x-upstream: 10.7.21.122:3001 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: A x-upstream: 10.7.21.122:3001 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 

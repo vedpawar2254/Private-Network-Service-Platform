@@ -1,0 +1,13 @@
+# 2026-11-23 11:36:44 Mac 2 (10.7.26.218, edge) -> Backend A direct, AFTER pf rule on Mac 3 (only 10.7.26.218 allowed on :3001)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: A
+Cache-Control: no-store
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+ETag: W/"3f-B4LR6LIb53CVQ941U0sZSlFfc4w"
+Date: Mon, 23 Nov 2026 06:06:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"backend":"A","status":"ok","time":"2026-11-23T06:06:44.462Z"}
