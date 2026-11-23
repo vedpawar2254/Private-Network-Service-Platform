@@ -1,0 +1,7 @@
+# 2026-11-23 12:10:55 BEFORE cutover
+
+; <<>> DiG 9.10.6 <<>> app.lando.test +noall +answer
+;; global options: +cmd
+app.lando.test.		30	IN	A	10.7.26.218
+HTTP/2 200 
+x-edge: mac2-primary

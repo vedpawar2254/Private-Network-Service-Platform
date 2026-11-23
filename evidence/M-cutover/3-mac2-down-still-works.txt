@@ -1,0 +1,8 @@
+# 2026-11-23 12:15:01 Mac 2 nginx STOPPED (primary edge down) after DNS cutover
+Mac 2 :443 -> CLOSED (connection refused)
+
+app.lando.test.		30	IN	A	10.7.15.167
+HTTP/2 200  x-backend: B x-edge: mac4-standby 
+HTTP/2 200  x-backend: A x-edge: mac4-standby 
+HTTP/2 200  x-backend: B x-edge: mac4-standby 
+HTTP/2 200  x-backend: A x-edge: mac4-standby 

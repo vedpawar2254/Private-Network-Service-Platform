@@ -1,0 +1,5 @@
+# 2026-11-23 12:10:54 Standby edge Mac 4 (10.7.15.167) — tested via --resolve, cert validated (no -k)
+HTTP/2 200  x-backend: A x-edge: mac4-standby 
+HTTP/2 200  x-backend: B x-edge: mac4-standby 
+HTTP/2 200  x-backend: A x-edge: mac4-standby 
+HTTP/2 200  x-backend: B x-edge: mac4-standby 
