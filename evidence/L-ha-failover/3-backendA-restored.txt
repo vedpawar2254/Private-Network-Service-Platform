@@ -1,0 +1,7 @@
+# 2026-11-23 11:16:23 Backend A (Mac 3) RESTARTED — after fail_timeout (10s), 6 requests via https://app.lando.test
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: A x-upstream: 10.7.21.122:3001 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
+HTTP/2 200  x-backend: A x-upstream: 10.7.21.122:3001 
+HTTP/2 200  x-backend: B x-upstream: 10.7.15.167:3002 
