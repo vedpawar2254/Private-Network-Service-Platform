@@ -1,0 +1,14 @@
+aviralmishra@Avirals-MacBook-Pro backend % sudo pfctl -a com.apple/cn-isolation -F all
+No ALTQ support in kernel
+ALTQ related functions disabled
+rules cleared
+nat cleared
+dummynet cleared
+0 tables deleted.
+aviralmishra@Avirals-MacBook-Pro backend % sudo pfctl -a com.apple/cn-isolation -s rules
+No ALTQ support in kernel
+ALTQ related functions disabled
+aviralmishra@Avirals-MacBook-Pro backend % sudo pfctl -d
+No ALTQ support in kernel
+ALTQ related functions disabled
+pf disabled
