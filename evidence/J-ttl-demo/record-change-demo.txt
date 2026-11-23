@@ -1,0 +1,25 @@
+================================================================================
+PHASE 2 - EXTENSION B: DNS TTL & CONTROLLED RECORD CHANGE EVIDENCE
+Domain: app.LANdo.test
+Configured TTL: 30 seconds
+================================================================================
+
+1. BEFORE CHANGE (Original Record -> Edge Mac 2: 10.7.21.122):
+;; ANSWER SECTION:
+app.LANdo.test.		30	IN	A	10.7.21.122
+
+2. RECORD CHANGE APPLIED:
+Changed host-record in dnsmasq.conf to Mac 1 IP (10.7.30.221) and reloaded dnsmasq.
+
+3. QUERY IMMEDIATELY AFTER CHANGE (DNS Server authoritative answer):
+;; ANSWER SECTION:
+app.LANdo.test.		30	IN	A	10.7.30.221
+
+4. CLIENT CACHE BEHAVIOR:
+- For the duration of TTL (30s), clients holding the cached answer will continue to resolve to 10.7.21.122.
+- After 30 seconds (or upon executing `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`),
+  the cache expires and the client fetches the new record: 10.7.30.221.
+
+5. RESTORATION:
+Record restored back to primary edge: 10.7.21.122.
+================================================================================

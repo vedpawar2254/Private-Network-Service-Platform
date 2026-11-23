@@ -1,0 +1,21 @@
+
+; <<>> DiG 9.10.6 <<>> @127.0.0.1 app.LANdo.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15066
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.LANdo.test.			IN	A
+
+;; ANSWER SECTION:
+app.LANdo.test.		30	IN	A	10.7.21.122
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Mon Nov 23 10:16:59 IST 2026
+;; MSG SIZE  rcvd: 59
+
